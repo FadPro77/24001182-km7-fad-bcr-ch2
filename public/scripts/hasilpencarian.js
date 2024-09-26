@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
       hasilPencarianContent.innerHTML += mobilCard;
     });
   } else {
-    hasilPencarianContent.innerHTML = "<p>Tidak ada mobil yang ditemukan.</p>";
+    hasilPencarianContent.innerHTML = `
+      <p class="no-results">Tidak ada mobil yang ditemukan.</p>
+  `;
   }
 });

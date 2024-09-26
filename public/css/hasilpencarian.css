@@ -8,7 +8,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Membuat card rata tengah */
+  justify-content: center;
 }
 
 .card {
@@ -26,24 +26,24 @@
 }
 
 .image-content {
-  width: 100%; /* Mengisi lebar card */
-  height: 222px; /* Tinggi gambar yang konsisten */
+  width: 100%;
+  height: 222px;
 }
 
 .card-body {
-  padding: 15px; /* Jarak dalam card */
+  padding: 15px;
 }
 
 #title-car {
-  font-size: 14px; /* Ukuran font judul */
-  font-weight: 400; /* Menebalkan judul */
-  margin-bottom: 10px; /* Jarak bawah */
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
   line-height: 20px;
 }
 
 #rent-car {
-  font-size: 16px; /* Ukuran font harga */
-  margin-bottom: 8px; /* Jarak bawah */
+  font-size: 16px;
+  margin-bottom: 8px;
   line-height: 24px;
   font-weight: 700;
 }
@@ -52,8 +52,8 @@
 #capacity-car,
 #transmission-car,
 #year-car {
-  font-size: 14px; /* Ukuran font deskripsi */
-  margin-bottom: 8px; /* Jarak bawah */
+  font-size: 14px;
+  margin-bottom: 8px;
   font-weight: 300;
   line-height: 20px;
 }
@@ -220,12 +220,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .form__tanggal:focus,
 .form__waktu-jemput:focus,
 .form__jumlah-penumpang:focus {
-  border-color: #5cb85f; /* Ganti dengan warna border yang diinginkan saat fokus */
-  outline: none; /* Hapus outline default di sekitar input */
+  border-color: #5cb85f;
+  outline: none;
 }
 
 /* Mengubah background saat opsi dipilih */
 .form__tipe-driver option:checked {
-  background-color: #c9e7ca; /* Warna background opsi yang dipilih */
-  color: #5cb85f; /* Warna teks opsi yang dipilih */
+  background-color: #c9e7ca;
+  color: #5cb85f;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 16px;
+  color: #0000008a;
 }

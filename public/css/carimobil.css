@@ -1,7 +1,7 @@
 /* Block: main */
 .carimobil {
   background-color: #f4f4f4;
-  min-height: 100vh; /* Pastikan tinggi minimum agar section penuh */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -174,8 +174,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .form__tanggal:focus,
 .form__waktu-jemput:focus,
 .form__jumlah-penumpang:focus {
-  border-color: #5cb85f; /* Ganti dengan warna border yang diinginkan saat fokus */
-  outline: none; /* Hapus outline default di sekitar input */
+  border-color: #5cb85f;
+  outline: none;
 }
 
 @media (max-width: 768px) {
