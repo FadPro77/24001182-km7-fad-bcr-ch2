@@ -77,14 +77,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* Ubah menjadi flex-start untuk merapikan */
+  align-items: center;
+  height: 106px;
+  width: 1047px;
+  gap: 16px;
   padding: 20px;
   background-color: #ffffff;
+  position: relative;
+  right: 100px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  margin: 0 auto; /* Untuk meratakan tengah */
-  max-width: 1047px; /* Atur lebar maksimum */
 }
 
 /* Input and Button Styling */
@@ -92,12 +95,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 1; /* Menggunakan flex untuk menyeimbangkan elemen */
-  margin-right: 16px; /* Jarak antar elemen */
-}
-
-.search-box div:last-child {
-  margin-right: 0; /* Menghapus margin kanan untuk elemen terakhir */
 }
 
 .search-box p {
@@ -108,21 +105,73 @@
   margin-bottom: 5px;
 }
 
-.form__tipe-driver,
-.form__tanggal,
-.form__waktu-jemput,
-.form__jumlah-penumpang {
+.title__tipe-driver,
+.title__tanggal,
+.title__waktu-jemput,
+.title__jumlah-penumpang {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.form__tipe-driver {
   height: 36px;
+  width: 211px;
   padding: 10px;
   font-size: 16px;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
   border: 1px solid #3c3c3c;
-  border-radius: 4px; /* Tambahkan border-radius untuk konsistensi */
-  margin-bottom: 10px; /* Jarak antar input */
+}
+
+.form__tanggal {
+  height: 36px;
+  width: 211px;
+  padding: 10px;
+  font-size: 16px;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #3c3c3c;
+}
+
+.form__waktu-jemput {
+  height: 36px;
+  width: 211px;
+  padding: 10px;
+  font-size: 16px;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #3c3c3c;
 }
 
 .input-wrapper {
   position: relative;
+  display: inline-block;
   width: 100%;
+}
+
+.form__jumlah-penumpang {
+  height: 36px;
+  width: 211px;
+  padding: 10px;
+  font-size: 16px;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #3c3c3c;
 }
 
 .icon__penumpang {
@@ -135,16 +184,35 @@
   pointer-events: none;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  width: 18px;
+  height: 18px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  width: 18px;
+  height: 18px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  width: 18px;
+  height: 18px;
+}
+
 .button__cari-mobil {
   padding: 8px 12px;
+  width: 95px;
+  height: 36px;
   background-color: #5cb85f;
   color: white;
   border: none;
-  border-radius: 4px; /* Sesuaikan border-radius */
+  border-radius: 2px;
   font-size: 14px;
   font-weight: 700;
+  gap: 10px;
   cursor: pointer;
-  margin-top: 10px; /* Jarak atas untuk tombol */
+  top: 11px;
+  position: relative;
 }
 
 /* Ubah warna border saat input ditekan (fokus) */
@@ -152,12 +220,12 @@
 .form__tanggal:focus,
 .form__waktu-jemput:focus,
 .form__jumlah-penumpang:focus {
-  border-color: #5cb85f;
-  outline: none;
+  border-color: #5cb85f; /* Ganti dengan warna border yang diinginkan saat fokus */
+  outline: none; /* Hapus outline default di sekitar input */
 }
 
 /* Mengubah background saat opsi dipilih */
 .form__tipe-driver option:checked {
-  background-color: #c9e7ca;
-  color: #5cb85f;
+  background-color: #c9e7ca; /* Warna background opsi yang dipilih */
+  color: #5cb85f; /* Warna teks opsi yang dipilih */
 }

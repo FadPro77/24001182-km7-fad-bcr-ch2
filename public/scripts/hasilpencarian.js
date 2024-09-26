@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       `;
 
-      // Masukkan elemen mobilCard ke dalam section hasilpencarian
       hasilPencarianContent.innerHTML += mobilCard;
     });
   } else {
