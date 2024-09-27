@@ -207,9 +207,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .search-box {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 15px;
-    width: 345px;
+    width: 100%;
   }
 
   .search-box div {
