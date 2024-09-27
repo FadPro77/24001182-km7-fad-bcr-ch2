@@ -178,7 +178,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   outline: none;
 }
 
-/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
   .carimobil {
     flex-direction: column;
@@ -208,23 +207,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .search-box {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 15px;
-    width: 100%; /* Ensure full width on mobile */
-    padding: 10px; /* Reduce padding for smaller screens */
-    margin: 0; /* Remove any horizontal offset */
   }
 
   .search-box div {
-    width: 100%; /* Ensure inputs take full width */
-    align-items: start;
+    width: 100%;
+    align-items: center;
   }
 
   input {
-    width: 100%; /* Make inputs full-width on mobile */
+    width: 100%;
   }
 
-  button.button__cari-mobil {
-    width: 100%; /* Ensure button takes full width on mobile */
+  button.cari-mobil {
+    width: 100%;
   }
 }
