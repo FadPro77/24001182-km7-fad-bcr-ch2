@@ -214,7 +214,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .search-box div {
     width: 100%;
-    align-items: center;
+    align-items: start;
   }
 
   input {
